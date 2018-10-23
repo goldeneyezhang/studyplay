@@ -13,3 +13,10 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(file)
 
 GET     /hello                      controllers.HomeController.hello(name: String)
+GET     /test                       controllers.HomeController.test
+
+GET     /hello/Bob                  controllers.Application.helloBob
+GET     /hello2/:name               controllers.Application.hello(name)
+GET     /foo/bar/hello              controllers.Relative.helloview
+GET     /hello3/:name                controllers.Relative.hello(name)
+
